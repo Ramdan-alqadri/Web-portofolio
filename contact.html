@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ramdan Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">About me</a>
+            <a href="portfolio.html">Portofolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="wave-background"></div>
+        <div class="quote-section">
+            <h2>"Let's turn the impossible into possible –<br>reach out and let's make it happen!"</h2>
+            <div class="connect-btn-wrapper">
+                <a href="#" class="connect-btn">Connect Now!</a>
+            </div>
+        </div>
+        <!-- Add this form section after the quote section -->
+        <div class="contact-form-overlay" id="contactForm">
+            <div class="contact-form-container">
+                <div class="contact-left">
+                    <a href="contact.html" class="back-arrow">←</a>
+                    <h2>Let's Connect!👋</h2>
+                    <div class="contact-info">
+                        <div class="social-item">
+                            <img src="images/linkedin.png" alt="LinkedIn">
+                            <span>Muhammad Ramdan Alqadri</span>
+                        </div>
+                        <div class="social-item">
+                            <img src="images/whatsapp.png" alt="WhatsApp">
+                            <span>0822.........91</span>
+                        </div>
+                        <div class="social-item">
+                            <img src="images/instagram.png" alt="Instagram">
+                            <span>@daladalla</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <h2>or drop message here💌</h2>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name: ....">
+                        <input type="email" placeholder="e - mail: ....">
+                        <textarea placeholder="message"></textarea>
+                        <button type="submit" class="submit-btn">KIRIM</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="social-section">
+                <div class="blog-logo">
+                    <img src="images/logofooter.png" alt="Ramdan Blog">
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/gmail.png" alt="Gmail"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Add this script before closing body tag -->
+    <script>
+        document.querySelector('.connect-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('contactForm').style.display = 'flex';
+        });
+    
+        document.querySelector('.back-arrow').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('contactForm').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
