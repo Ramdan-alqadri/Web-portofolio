@@ -28,21 +28,22 @@
             </div>
         </div>
         <!-- Add this form section after the quote section -->
+        <!-- Update the contact form overlay section -->
         <div class="contact-form-overlay" id="contactForm">
             <div class="contact-form-container">
                 <div class="contact-left">
-                    <a href="contact.html" class="back-arrow">←</a>
-                    <h2>Let's Connect!👋</h2>
+                    <a href="#" class="back-arrow">←</a>
+                    <h2>Let's Connect!✨</h2>
                     <div class="contact-info">
-                        <div class="social-item">
+                        <div class="social-item linkedin">
                             <img src="images/linkedin.png" alt="LinkedIn">
                             <span>Muhammad Ramdan Alqadri</span>
                         </div>
-                        <div class="social-item">
+                        <div class="social-item whatsapp">
                             <img src="images/whatsapp.png" alt="WhatsApp">
                             <span>0822.........91</span>
                         </div>
-                        <div class="social-item">
+                        <div class="social-item instagram">
                             <img src="images/instagram.png" alt="Instagram">
                             <span>@daladalla</span>
                         </div>
@@ -51,9 +52,15 @@
                 <div class="contact-right">
                     <h2>or drop message here💌</h2>
                     <form class="contact-form">
-                        <input type="text" placeholder="Name: ....">
-                        <input type="email" placeholder="e - mail: ....">
-                        <textarea placeholder="message"></textarea>
+                        <div class="form-field">
+                            <input type="text" placeholder="Name: ....">
+                        </div>
+                        <div class="form-field">
+                            <input type="email" placeholder="e - mail: ....">
+                        </div>
+                        <div class="form-field">
+                            <textarea placeholder="message"></textarea>
+                        </div>
                         <button type="submit" class="submit-btn">KIRIM</button>
                     </form>
                 </div>
@@ -75,17 +82,35 @@
         </footer>
     </div>
 
-    <!-- Add this script before closing body tag -->
-    <script>
-        document.querySelector('.connect-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('contactForm').style.display = 'flex';
-        });
-    
-        document.querySelector('.back-arrow').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('contactForm').style.display = 'none';
-        });
-    </script>
+    <!-- Update script section -->
+        <!-- Replace the existing script section -->
+        <script>
+            // Get DOM elements
+            const contactForm = document.getElementById('contactForm');
+            const connectBtn = document.querySelector('.connect-btn');
+            const backArrow = document.querySelector('.back-arrow');
+
+            // Show contact form
+            connectBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                contactForm.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            });
+
+            // Hide contact form
+            backArrow.addEventListener('click', function(e) {
+                e.preventDefault();
+                contactForm.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            });
+
+            // Close form when clicking outside
+            contactForm.addEventListener('click', function(e) {
+                if (e.target === contactForm) {
+                    contactForm.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        </script>
 </body>
 </html>
