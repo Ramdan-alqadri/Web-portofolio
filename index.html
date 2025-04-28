@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramdan Portfolio</title>
+    <title>Ramdan Only one</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <nav>
@@ -34,8 +38,8 @@
                 <p>Merancang dengan cermat, Menghubungkan dengan tepat, dan<br>
                    Merayakan dengan semangat 🎉</p>
             </div>
-            <div class="profile-image">
-                <img src="images/homefoto.png" alt="Ramdan's Profile">
+            <div class="profile-image animate__animated animate__pulse">
+                <img src="images/homefoto.png" alt="Ramdan's Profile" >
             </div>
         </div>
     </section>
@@ -62,26 +66,46 @@
         <div class="portfolio-container">
             <h1>Portofolio</h1>
             <div class="portfolio-grid">
-                <div class="portfolio-item yellow-gradient">
-                    <div class="portfolio-content">
-                        <h2>Event organizer</h2>
-                        <a href="#" class="view-more">View More</a>
+                <div class="portfolio-item">
+                    <div class="portfolio-content yellow-gradient">
+                        <div class="portfolio-front">
+                            <h2>Event organizer</h2>
+                            <a href="#" class="view-more">View More</a>
+                        </div>
+                        <div class="portfolio-back">
+                            <h3>Event Management</h3>
+                            <p>Specialized in organizing and managing various events, from small workshops to large conferences.</p>
+                            <a href="#" class="view-more">Learn More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item blue-gradient">
-                    <div class="portfolio-content">
-                        <h2>Data analysis</h2>
-                        <a href="#" class="view-more">View More</a>
+                <div class="portfolio-item">
+                    <div class="portfolio-content blue-gradient">
+                        <div class="portfolio-front">
+                            <h2>Data analysis</h2>
+                            <a href="#" class="view-more">View More</a>
+                        </div>
+                        <div class="portfolio-back">
+                            <h3>Data Analytics</h3>
+                            <p>Experience in analyzing data trends and creating insightful reports for business decisions.</p>
+                            <a href="#" class="view-more">Learn More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-item purple-gradient">
-                    <div class="portfolio-content">
-                        <h2>Sosial media admin</h2>
-                        <a href="#" class="view-more">View More</a>
+                <div class="portfolio-item">
+                    <div class="portfolio-content purple-gradient">
+                        <div class="portfolio-front">
+                            <h2>Sosial media admin</h2>
+                            <a href="#" class="view-more">View More</a>
+                        </div>
+                        <div class="portfolio-back">
+                            <h3>Social Media Management</h3>
+                            <p>Creating engaging content and managing social media presence for various brands.</p>
+                            <a href="#" class="view-more">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section id="testimonials" class="section">
         <div class="testimonials-container">
@@ -115,10 +139,42 @@
                     <a href="#" class="connect-btn">Connect Now!</a>
                 </div>
             </div>
-            
-            <!-- Contact Form Overlay -->
             <div class="contact-form-overlay" id="contactForm">
-                <!-- Your existing contact form content -->
+                <div class="contact-form-container">
+                    <div class="contact-left">
+                        <a href="#" class="back-arrow">←</a>
+                        <h2>Let's Connect!✨</h2>
+                        <div class="contact-info">
+                            <div class="social-item linkedin">
+                                <img src="images/linkedin.png" alt="LinkedIn">
+                                <span>Muhammad Ramdan Alqadri</span>
+                            </div>
+                            <div class="social-item whatsapp">
+                                <img src="images/whatsapp.png" alt="WhatsApp">
+                                <span>0822.........91</span>
+                            </div>
+                            <div class="social-item instagram">
+                                <img src="images/instagram.png" alt="Instagram">
+                                <span>@daladalla</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <h2>or drop message here💌</h2>
+                        <form class="contact-form">
+                            <div class="form-field">
+                                <input type="text" placeholder="Name: ....">
+                            </div>
+                            <div class="form-field">
+                                <input type="email" placeholder="e - mail: ....">
+                            </div>
+                            <div class="form-field">
+                                <textarea placeholder="message"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">KIRIM</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             
             <footer>
@@ -134,6 +190,8 @@
                     </div>
                 </div>
             </footer>
+        </div>
+    
         </div>
     </section>
     <!-- Add after portfolio section -->
