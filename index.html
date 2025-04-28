@@ -8,7 +8,6 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -146,15 +145,15 @@
                         <h2>Let's Connect!✨</h2>
                         <div class="contact-info">
                             <div class="social-item linkedin">
-                                <img src="images/linkedin.png" alt="LinkedIn">
+                                <a href="#"><i class="fab fa-linkedin" style="color: #644995;"></i></a>
                                 <span>Muhammad Ramdan Alqadri</span>
                             </div>
                             <div class="social-item whatsapp">
-                                <img src="images/whatsapp.png" alt="WhatsApp">
+                                <a href="#"><i class="fab fa-whatsapp" style="color: #644995;"></i></a>
                                 <span>0822.........91</span>
                             </div>
                             <div class="social-item instagram">
-                                <img src="images/instagram.png" alt="Instagram">
+                                <a href="#"><i class="fab fa-instagram" style="color: #644995;"></i></a>
                                 <span>@daladalla</span>
                             </div>
                         </div>
@@ -171,25 +170,81 @@
                             <div class="form-field">
                                 <textarea placeholder="message"></textarea>
                             </div>
-                            <button type="submit" class="submit-btn">KIRIM</button>
+                            <button type="submit" class="submit-btn">KIRIM 💌</button>
                         </form>
                     </div>
                 </div>
             </div>
             
-            <footer>
-                <div class="social-section">
-                    <div class="blog-logo">
-                        <img src="images/logofooter.png" alt="Ramdan Blog">
-                    </div>
-                    <div class="social-icons">
-                        <a<i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"></a>
-                        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-                        <a href="#"><img src="images/gmail.png" alt="Gmail"></a>
-                    </div>
-                </div>
-            </footer>
+<!-- Replace the existing footer with this simpler version -->
+<footer>
+    <div class="footer-content">
+        <div class="blog-logo">
+            <img src="images/logofooter.png" alt="Ramdan Blog">
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
+        <p class="copyright">© 2025 Ramdan. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Keep the Font Awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Replace the existing footer styles with these simplified styles -->
+<style>
+footer {
+    background: linear-gradient(180deg, #9cc5cc 0%, #f6c962 100%);
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.blog-logo img {
+    max-width: 180px;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: #644995;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.copyright {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+</style>
         </div>
     
         </div>

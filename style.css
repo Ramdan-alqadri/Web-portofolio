@@ -580,7 +580,7 @@ footer {
 }
 
 .blog-logo img {
-    height: 45px;
+    height: 60px;
     object-fit: contain;
 }
 
@@ -706,8 +706,8 @@ footer {
 }
 
 .submit-btn {
-    background: var(--purple-light);
-    color: #333;
+    background: linear-gradient(to right, var(--yellow), var(--blue));
+    color: #644995;
     border: none;
     padding: 12px 40px;
     border-radius: 20px;
